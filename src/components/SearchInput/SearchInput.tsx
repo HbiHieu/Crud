@@ -16,14 +16,14 @@ const SearchInput = ({ placeholder, handleSearchInput, listUser , setLoading }: 
 
   const resultSearch = useMemo(() => {
     return listUser.filter((user) => user.name.includes(valueSearch));
-  }, [valueSearch]);
+  }, [valueSearch , listUser ]);
 
   useEffect( () => { 
     handleSearchInput(resultSearch) ;
     setLoading(false) ;
   } , [resultSearch] )
 
-  console.log(resultSearch)
+  console.log(listUser)
 
   const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValueInput(e.target.value);
