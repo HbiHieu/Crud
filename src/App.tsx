@@ -13,7 +13,7 @@ import "./styles/app.scss";
 
 function App() {
   const [listUser, setListUser] = useState<IUser[]>([
-    { name: "Hiếu", email: "eightbi.dev@gmail.com", id: "1" },
+    //{ name: "Hiếu", email: "eightbi.dev@gmail.com", id: "1" },
   ]);
   const [currentUserForm, setCurrentUserForm] = useState<IUserForm>({
     data: undefined,
