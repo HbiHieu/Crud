@@ -1,0 +1,18 @@
+.buttonHeader {
+    height: 45px;
+    border-radius: 5px;
+    width: 140px;
+    background-color: #fbce60;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.buttonHeader:hover {
+    opacity: 0.8;
+}
+
+.buttonHeader:disabled {
+    opacity: 1;
+    pointer-events: none;
+    user-select: none;
+}

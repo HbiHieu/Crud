@@ -1,0 +1,27 @@
+.loaderCircle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #010142;
+    display: inline-block;
+    margin: 0 10px;
+    animation: Loading 0.4s ease-in-out infinite; 
+    animation-direction: alternate-reverse;
+}
+
+.delay-1 {
+    -webkit-animation-delay: 0.2s;
+}
+
+.delay-2 {
+    -webkit-animation-delay: 0.4s;
+}
+
+@keyframes Loading {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(60%);  
+    }
+}
